@@ -1,0 +1,43 @@
+.wrapper{
+ display: flex;
+ flex-direction: row;    
+}
+.left {
+ display: flex;
+ flex: 1;
+ flex-direction: column;   
+ /* border: 1px solid red; */
+ height: 100vh;
+ /* justify-content: center; */
+ padding: 6rem;
+ margin-top: 6rem;
+}
+.name, .title{
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+.description {
+    font-size: 2.4rem;
+    font-weight: 400
+}
+.additional {
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;   
+    /* border: 1px solid red; */
+}
+.splash{
+position: absolute;
+top: 0;
+}
+.profile {
+    position: absolute;
+    top:20rem;
+}
