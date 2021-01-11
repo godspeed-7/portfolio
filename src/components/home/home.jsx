@@ -39,7 +39,6 @@ export default function Home() {
   ];
   return (
     <React.Fragment>
-      <ToolBar />
       <div className={styles.wrapper}>
         <div className={styles.left}>
           <div className={styles.name}>Ankit</div>

@@ -2,27 +2,37 @@
 import React from 'react';
 import styles from './toolbar.module.css';
 import codeImg from '../../assets/icons/code.svg';
+import { useHistory } from 'react-router-dom';
 
-export default function Toolbar() {
+export default function Toolbar(props) {
+  console.log('prtops', props);
+  const history = useHistory();
   const options = [
     {
       id: 1,
       name: 'Home',
+      path: '/',
     },
     {
       id: 2,
       name: 'Projects',
+      path: '/projects',
     },
     {
       id: 3,
       name: 'Contact',
+      path: '/contact',
     },
   ];
 
   const renderOptions = () => {
     return options.map((option) => {
       return (
-        <h2 key={option.id} className={styles.headItem}>
+        <h2
+          key={option.id}
+          className={styles.headItem}
+          onClick={() => history.push(`${option.path}`)}
+        >
           {option.name}
         </h2>
       );
