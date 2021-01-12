@@ -4,7 +4,8 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    width: 100vw;
+    height: 100vh;
 
 }
 .project {
@@ -18,7 +19,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 2rem;
     /* height: 50rem; */
 }

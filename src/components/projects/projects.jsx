@@ -2,9 +2,11 @@
 import React from 'react';
 import styles from './projects.module.css';
 import { projects } from '../../resources/projects';
+import { backgrounds } from '../../assets/backgrounds';
 
 export default function Projects() {
   console.log(projects);
+  console.log(backgrounds);
   const getButtonColor = (tech) => {
     switch (tech) {
       case 'HTML':
@@ -56,5 +58,15 @@ export default function Projects() {
       );
     });
   };
-  return <div className={styles.container}>{renderProjects()}</div>;
+  return (
+    <div
+      className={styles.container}
+      style={{
+        backgroundImage: `url(${backgrounds[1]})`,
+        backgroundRepeat: 'repeat',
+      }}
+    >
+      {renderProjects()}
+    </div>
+  );
 }
