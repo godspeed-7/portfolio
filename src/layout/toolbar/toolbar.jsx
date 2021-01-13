@@ -28,13 +28,13 @@ export default function Toolbar(props) {
   const renderOptions = () => {
     return options.map((option) => {
       return (
-        <h2
+        <div
           key={option.id}
           className={styles.headItem}
           onClick={() => history.push(`${option.path}`)}
         >
           {option.name}
-        </h2>
+        </div>
       );
     });
   };
@@ -44,7 +44,7 @@ export default function Toolbar(props) {
         <div className={styles.code}>
           <img src={codeImg} alt="" />
         </div>
-        <h1>Ankit</h1>
+        <div className={styles.logoName}>Ankit</div>
       </div>
       <div className={styles.right}>{renderOptions()}</div>
     </div>

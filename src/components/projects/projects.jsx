@@ -62,8 +62,9 @@ export default function Projects() {
     <div
       className={styles.container}
       style={{
-        backgroundImage: `url(${backgrounds[1]})`,
-        backgroundRepeat: 'repeat',
+        background: `url(${
+          backgrounds[Math.floor(Math.random() * 6)]
+        }) repeat center`,
       }}
     >
       {renderProjects()}
