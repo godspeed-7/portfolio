@@ -7,7 +7,7 @@ export default function Ratings({ ratings }) {
     return ratings.map(({ name, id, rating }) => {
       return (
         <div className={styles.wrapper}>
-          <h2>{name}</h2>{' '}
+          <div className={styles.tech}>{name}</div>{' '}
           <ReactStars
             count={rating}
             size={32}

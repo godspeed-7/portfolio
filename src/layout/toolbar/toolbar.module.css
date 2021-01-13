@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     margin-left: 5%;
+    z-index: 20;
+    border: 1px solid red;
+    z-index: 200000;
 }
 
 .left {
@@ -12,7 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 20%;
+    margin-right: 17%;
+    z-index: 20;
 }
 
 .right {
@@ -33,7 +37,7 @@
     font-weight: 500;
 }
 .headItem {
-    padding: 5px 20px;
+    padding: 5px 25px;
     cursor: pointer;
     border-radius: 20px;
     font-size: 26px;
