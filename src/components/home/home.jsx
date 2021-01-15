@@ -41,8 +41,8 @@ export default function Home() {
     <React.Fragment>
       <div className={styles.wrapper}>
         <div className={styles.left}>
-          <div className={styles.name}>Ankit</div>
-          <div className={styles.title}>Front End Developer</div>
+          <div className={styles.name}> Hi 👋This is Ankit 🚀</div>
+          <div className={styles.title}>I am a Front End Developer 🔥</div>
           <div className={styles.description}>
             Over 4 years of experience in software development. I specialize in
             React, Typescript, Javascript, NodeJS, React Native. Solid
@@ -51,6 +51,18 @@ export default function Home() {
           <div className={styles.additional}>
             <img src={github} alt="splash" />
             <img src={linkedin} alt="profile" />
+            <button
+              type="button"
+              className={`btn btn-danger btn-lg`}
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/file/d/1aRI9FLqwMfZlxDhErutmiLWc-ue5ryId/view?usp=sharing',
+                  '_blank'
+                )
+              }
+            >
+              View Resume👀
+            </button>
           </div>
           <Ratings ratings={ratings} />
         </div>

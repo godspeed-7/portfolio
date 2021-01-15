@@ -21,10 +21,10 @@ export default function Contact() {
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control type="text" size="lg" placeholder="Enter email" />
+          <Form.Control type="email" size="lg" placeholder="Enter email" />
         </Form.Group>
         <Form.Group controlId="exampleForm.ControlTextarea1">
-          <Form.Label>Example textarea</Form.Label>
+          <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -33,7 +33,7 @@ export default function Contact() {
           />
         </Form.Group>
         <Button variant="contained" color="secondary">
-          Secondary
+          Submit Details
         </Button>
       </Form>
     </div>

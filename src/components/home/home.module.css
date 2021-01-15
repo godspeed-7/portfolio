@@ -10,9 +10,13 @@
  margin-top: 60px;
  margin-left: 25px;
 }
-.name, .title{
-    font-size: 50px;
-    font-weight: 500;
+ .title{
+    font-size: 38px;
+    font-weight: 600;
+}
+.name {
+    font-size: 52px;
+    font-weight: 600;
 }
 .description {
     font-size: 24px;
@@ -20,7 +24,7 @@
 }
 .additional {
     display: flex;
-    width: 150px;
+    width: 350px;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
@@ -29,7 +33,6 @@
     display: flex;
     flex: 1;
     flex-direction: column;   
-    /* border: 1px solid red; */
 }
 .splash{
 position: absolute;

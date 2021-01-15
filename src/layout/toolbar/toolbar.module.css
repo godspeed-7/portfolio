@@ -5,9 +5,6 @@
     display: flex;
     align-items: center;
     margin-left: 5%;
-    z-index: 20;
-    border: 1px solid red;
-    z-index: 200000;
 }
 
 .left {
@@ -15,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 17%;
+    margin-right: 14%;
     z-index: 20;
 }
 
@@ -24,7 +21,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 500px;
+    width: 600px;
 }
 
 .code img {
@@ -34,14 +31,13 @@
 
  .logoName {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .headItem {
     padding: 5px 25px;
     cursor: pointer;
     border-radius: 20px;
     font-size: 26px;
-    font-weight: 200;
 }
 
 .headItem:hover {

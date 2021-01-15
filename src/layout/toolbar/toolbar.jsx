@@ -12,16 +12,19 @@ export default function Toolbar(props) {
       id: 1,
       name: 'Home',
       path: '/',
+      emoji: '☕',
     },
     {
       id: 2,
       name: 'Projects',
       path: '/projects',
+      emoji: '📚',
     },
     {
       id: 3,
       name: 'Contact',
       path: '/contact',
+      emoji: '☎',
     },
   ];
 
@@ -33,7 +36,7 @@ export default function Toolbar(props) {
           className={styles.headItem}
           onClick={() => history.push(`${option.path}`)}
         >
-          {option.name}
+          {option.name} {option.emoji}
         </div>
       );
     });

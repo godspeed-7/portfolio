@@ -1,7 +1,7 @@
 export const projects = [
     {
         id: '1',
-        name: 'Weather-app',
+        name: 'weather app',
         githubUrl: 'https://github.com/Amnok/weather-app',
         image: '/weather-app.PNG',
         deploymentUrl: '',
@@ -10,7 +10,7 @@ export const projects = [
     },
     {
         id: '2',
-        name: 'Beat-maker app',
+        name: 'beat-maker app',
         githubUrl: 'https://github.com/Amnok/beat-maker',
         image: '/beat-maker.PNG',
         deploymentUrl: '',
@@ -19,7 +19,7 @@ export const projects = [
     },
     {
         id: '3',
-        name: 'Weight-converter app',
+        name: 'weight-converter app',
         githubUrl: 'https://github.com/Amnok/weight-converter',
         image: '/weight-converter.PNG',
         deploymentUrl: '',
