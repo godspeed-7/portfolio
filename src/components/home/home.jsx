@@ -49,8 +49,21 @@ export default function Home() {
             communication and interpersonal skills.{' '}
           </div>
           <div className={styles.additional}>
-            <img src={github} alt="splash" />
-            <img src={linkedin} alt="profile" />
+            <img
+              src={github}
+              alt="splash"
+              onClick={() => window.open('https://github.com/Amnok', '_blank')}
+            />
+            <img
+              src={linkedin}
+              alt="profile"
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/ankit-singh-14576696/',
+                  '_blank'
+                )
+              }
+            />
             <button
               type="button"
               className={`btn btn-danger btn-lg`}
