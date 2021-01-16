@@ -1,12 +1,9 @@
 import React from 'react';
-import ToolBar from '../../layout/toolbar/toolbar';
 import styles from './home.module.css';
 import splash from '../../assets/splash.svg';
 import profile from '../../assets/me.svg';
 import github from '../../assets/icons/github.svg';
-import instagram from '../../assets/icons/instagram 1.svg';
 import linkedin from '../../assets/icons/linked-in.svg';
-import twitter from '../../assets/icons/twitter 1.svg';
 import Ratings from '../../shared/ratings/ratings';
 
 export default function Home() {
