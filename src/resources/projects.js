@@ -34,5 +34,15 @@ export const projects = [
         deploymentUrl: '',
         description: 'A simple Vanilla JS foor store.',
         techStack: ['Javascript', 'HTML', 'CSS'],
+    },
+    {
+        id: '5',
+        name: 'portfolio app',
+        githubUrl: 'https://github.com/Amnok/portfolio',
+        image: '/portfolio.PNG',
+        deploymentUrl: '',
+        description: 'This is a portfolio implemented in React.',
+        techStack: ['Javascript', 'HTML', 'CSS', 'React'],
+
     }
 ]
