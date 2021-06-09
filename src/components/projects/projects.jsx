@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './projects.module.css';
 import { projects } from '../../resources/projects';
 import { backgrounds } from '../../assets/backgrounds';
+import ProjectsFilter from '../projects-filter.jsx/projects-filter';
 
 export default function Projects() {
   console.log(projects);
@@ -30,7 +31,7 @@ export default function Projects() {
       return (
         <button
           type="button"
-          className={`btn btn-${color} btn-lg ${styles.button}`}
+          className={`btn btn-${color} btn-sm ${styles.button}`}
           onClick={() => {
             return tech === 'See more on github'
               ? window.open(githubUrl, '_blank')
@@ -46,9 +47,9 @@ export default function Projects() {
     return projects.map((project) => {
       return (
         <div className={styles.project}>
-          <h2>{project.name}</h2>
           <div className={styles.image}>
             <img src={project.image} alt="image" />
+            <h4 className={styles.projectName}>{project.name}</h4>
           </div>
           <div className={styles.details}>
             {/* <h3>GitHub {project.githubUrl}</h3> */}
@@ -59,15 +60,8 @@ export default function Projects() {
     });
   };
   return (
-    <div
-      className={styles.container}
-      style={{
-        background: `url(${
-          backgrounds[Math.floor(Math.random() * 6)]
-        }) repeat center`,
-      }}
-    >
-      {renderProjects()}
-    </div>
+    <React.Fragment>
+      <div className={styles.moviecontainer}>{renderProjects()}</div>
+    </React.Fragment>
   );
 }

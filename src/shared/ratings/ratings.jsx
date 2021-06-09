@@ -7,11 +7,13 @@ export default function Ratings({ ratings }) {
     return ratings.map(({ name, id, rating }) => {
       return (
         <div className={styles.wrapper}>
-          <div className={styles.tech}>{name}</div>
+          <div className={`${styles.tech} icon-with-animation`}>{name}</div>
           <ReactStars
-            count={rating}
+            count={10}
+            value={rating}
             size={32}
-            color="#ffd700"
+            color="grey"
+            activeColor="#ffd700"
             isHalf={true}
             edit={false}
           />

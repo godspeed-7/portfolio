@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: space-between;
     width: 600px;
+    z-index: 909090;
 }
 
 .code img {
@@ -38,6 +39,7 @@
     cursor: pointer;
     border-radius: 20px;
     font-size: 26px;
+    transition: background-color 2000ms linear;
 }
 
 .headItem:hover {

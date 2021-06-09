@@ -1,7 +1,8 @@
-*{
+* {
     font-size: 100%;
 }
-.container {
+
+.moviecontainer {
     padding: 100px;
     display: flex;
     flex-direction: row;
@@ -9,19 +10,40 @@
     flex-wrap: wrap;
 
 }
+
 .project {
-    /* border: 1px solid green; */
-    width: 700px;
-    height: 500px;
+    border: 1px solid green;
+    width: 400px;
+    /* height: 500px; */
     margin-bottom: 80px;
+    transition: display 1000ms linear;
 }
- .image img {
+.projectName {
+    position : absolute;
+    bottom: -8px;
+    padding: 10px;
+    /* display: none; */
+    background-color: #88239a;
+    width: 100%;
+    color: white;
+}
+
+.project:hover .projectName{
+display: block;
+}
+
+.image {
+    height: 300px;
+    position: relative;
+}
+.image img {
     /* width: 50rem; */
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
+
 .project h2 {
     /* font-size: 3rem; */
     font-weight: 700;
@@ -30,10 +52,11 @@
 }
 
 .details {
-display: flex;
-flex-direction: column;
-padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
+
 .button {
     margin-right: 20px;
     margin-bottom: 10px;

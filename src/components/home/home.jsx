@@ -5,35 +5,9 @@ import profile from '../../assets/me.svg';
 import github from '../../assets/icons/github.svg';
 import linkedin from '../../assets/icons/linked-in.svg';
 import Ratings from '../../shared/ratings/ratings';
+import { technologies } from '../../resources/techStack';
 
 export default function Home() {
-  const ratings = [
-    {
-      id: 1,
-      name: 'Javascript',
-      rating: 4,
-    },
-    {
-      id: 2,
-      name: 'HTML/CSS',
-      rating: 4,
-    },
-    {
-      id: 3,
-      name: 'React',
-      rating: 4.5,
-    },
-    {
-      id: 4,
-      name: 'Node',
-      rating: 3.5,
-    },
-    {
-      id: 5,
-      name: 'Typescript',
-      rating: 3,
-    },
-  ];
   return (
     <React.Fragment>
       <div className={styles.wrapper}>
@@ -47,11 +21,15 @@ export default function Home() {
           </div>
           <div className={styles.additional}>
             <img
+              className="icon-with-animation"
               src={github}
               alt="splash"
-              onClick={() => window.open('https://github.com/Amnok', '_blank')}
+              onClick={() =>
+                window.open('https://github.com/godspeed-7', '_blank')
+              }
             />
             <img
+              className="icon-with-animation"
               src={linkedin}
               alt="profile"
               onClick={() =>
@@ -74,7 +52,7 @@ export default function Home() {
               View Resume👀
             </button>
           </div>
-          <Ratings ratings={ratings} />
+          <Ratings ratings={technologies} />
         </div>
         <div className={styles.right}>
           <img src={splash} alt="splash" className={styles.splash} />

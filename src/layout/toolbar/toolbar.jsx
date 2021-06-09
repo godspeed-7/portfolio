@@ -5,7 +5,6 @@ import codeImg from '../../assets/icons/code.svg';
 import { useHistory } from 'react-router-dom';
 
 export default function Toolbar(props) {
-  console.log('prtops', props);
   const history = useHistory();
   const options = [
     {
