@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './projects.module.css';
 import { projects } from '../../resources/projects';
 import { backgrounds } from '../../assets/backgrounds';
-import ProjectsFilter from '../projects-filter.jsx/projects-filter';
 
 export default function Projects() {
   console.log(projects);
