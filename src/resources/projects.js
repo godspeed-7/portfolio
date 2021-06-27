@@ -44,6 +44,15 @@ export const projects = [
     description: 'This is a portfolio implemented in React.',
     techStack: ['Javascript', 'HTML', 'CSS', 'React'],
   },
+  {
+    id: '6',
+    name: 'hostify app',
+    githubUrl: 'https://github.com/godspeed-7/hostify',
+    image: 'https://i.postimg.cc/528kq8RF/Screenshot-2021-06-28-at-12-02-20-AM.png',
+    deploymentUrl: '',
+    description: 'A full fledge hosting service implementation',
+    techStack: ['Javascript', 'HTML', 'CSS'],
+  },
 ];
 
 export const getProjects = () => {
