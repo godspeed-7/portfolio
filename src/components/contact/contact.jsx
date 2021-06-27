@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './contact.module.css';
 import { backgrounds } from '../../assets/backgrounds';
-import Button from '@material-ui/core/Button';
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 import Input from '../../common/form/input';
