@@ -53,6 +53,15 @@ export const projects = [
     description: 'A full fledge hosting service implementation',
     techStack: ['Javascript', 'HTML', 'CSS'],
   },
+  {
+    id: '6',
+    name: 'cowin app',
+    githubUrl: 'https://github.com/godspeed-7/cowin',
+    image: 'https://i.postimg.cc/DyMV2h2d/Screenshot-2021-07-02-at-9-50-31-PM.png',
+    deploymentUrl: '',
+    description: 'COWIN app clone',
+    techStack: ['Javascript', 'HTML', 'CSS'],
+  },
 ];
 
 export const getProjects = () => {
