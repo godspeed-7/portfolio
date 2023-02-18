@@ -6,7 +6,7 @@ export default function Ratings({ ratings }) {
   const renderRatings = () => {
     return ratings.map(({ name, id, rating }) => {
       return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} key={id}>
           <div className={`${styles.tech} icon-with-animation`}>{name}</div>
           <ReactStars
             count={10}
@@ -21,5 +21,9 @@ export default function Ratings({ ratings }) {
       );
     });
   };
-  return <div className={styles.container}>{renderRatings()}</div>;
+  return (
+    <div className={styles.container} data-testid="ratings">
+      {renderRatings()}
+    </div>
+  );
 }
