@@ -13,6 +13,26 @@
             "postId": 1
         }
     ],
+    "layout": [
+        {
+            "id": 1,
+            "name": "Home",
+            "path": "/",
+            "emoji": "☕"
+        },
+        {
+            "id": 2,
+            "name": "Projects",
+            "path": "/projects",
+            "emoji": "📚"
+        },
+        {
+            "id": 3,
+            "name": "Contact",
+            "path": "/contact",
+            "emoji": "☎"
+        }
+    ],
     "profile": {
         "name": "Hi 👋This is Ankit 🚀",
         "title": "I am a Front End Developer 🔥",

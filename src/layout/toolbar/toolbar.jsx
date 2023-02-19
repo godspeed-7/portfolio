@@ -1,34 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './toolbar.module.css';
 import codeImg from '../../assets/icons/code.svg';
 import { useHistory } from 'react-router-dom';
+import axios from 'axios';
 
 export default function Toolbar(props) {
   const history = useHistory();
-  const options = [
-    {
-      id: 1,
-      name: 'Home',
-      path: '/',
-      emoji: '☕',
-    },
-    {
-      id: 2,
-      name: 'Projects',
-      path: '/projects',
-      emoji: '📚',
-    },
-    {
-      id: 3,
-      name: 'Contact',
-      path: '/contact',
-      emoji: '☎',
-    },
-  ];
+  const [layoutData, setlayoutData] = useState([]);
+
+  useEffect(() => {
+    const getLayoutData = async () => {
+      try {
+        const { data } = await axios.get('http://localhost:3000/layout');
+        setlayoutData(data);
+      } catch (error) {
+        setlayoutData({});
+      }
+    };
+    getLayoutData();
+  }, []);
 
   const renderOptions = () => {
-    return options.map((option) => {
+    return layoutData.map((option) => {
       return (
         <div
           key={option.id}
@@ -48,7 +42,9 @@ export default function Toolbar(props) {
         </div>
         <div className={styles.logoName}>Ankit</div>
       </div>
-      <div className={styles.right}>{renderOptions()}</div>
+      <div className={styles.right} data-testid="options">
+        {renderOptions()}
+      </div>
     </div>
   );
 }

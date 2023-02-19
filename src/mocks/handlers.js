@@ -12,11 +12,37 @@ const profileData =
             "resume": "https://drive.google.com/file/d/1aRI9FLqwMfZlxDhErutmiLWc-ue5ryId/view?usp=sharing"
         }
 }
+const layoutData = [
+    {
+        "id": 1,
+        "name": "Home",
+        "path": "/",
+        "emoji": "☕"
+    },
+    {
+        "id": 2,
+        "name": "Projects",
+        "path": "/projects",
+        "emoji": "📚"
+    },
+    {
+        "id": 3,
+        "name": "Contact",
+        "path": "/contact",
+        "emoji": "☎"
+    }
+]
 
 export const handlers = [
     rest.get("http://localhost:3000/profile", (req, res, ctx) => {
         return res(
             ctx.json(profileData)
         )
-    })
+    }),
+    rest.get("http://localhost:3000/layout", (req, res, ctx) => {
+        return res(
+            ctx.json(layoutData)
+        )
+    }),
+
 ]
