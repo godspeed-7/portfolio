@@ -5,16 +5,17 @@ import profile from '../../assets/me.svg';
 import { default as githubIcon } from '../../assets/icons/github.svg';
 import { default as linkedinIcon } from '../../assets/icons/linked-in.svg';
 import Ratings from '../../shared/ratings/ratings';
-import axios from 'axios';
+// import axios from 'axios';
 import _ from 'lodash';
+import { getProfile } from '../../resources/profile';
 
 export default function Home() {
   const [profileData, setProfileData] = useState({});
   useEffect(() => {
     const getProfileData = async () => {
       try {
-        const { data } = await axios.get('http://localhost:3000/profile');
-        setProfileData(data);
+        // const { data } = await axios.get('http://localhost:3000/profile');
+        setProfileData(getProfile());
       } catch (error) {
         setProfileData({});
       }

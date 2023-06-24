@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from 'react';
-import styles from './toolbar.module.css';
-import codeImg from '../../assets/icons/code.svg';
 import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+import codeImg from '../../assets/icons/code.svg';
+import { getLayout } from '../../resources/layout';
+import styles from './toolbar.module.css';
 
 export default function Toolbar(props) {
   const history = useHistory();
@@ -12,10 +12,11 @@ export default function Toolbar(props) {
   useEffect(() => {
     const getLayoutData = async () => {
       try {
-        const { data } = await axios.get('http://localhost:3000/layout');
-        setlayoutData(data);
+        // const { data } = await axios.get('http://localhost:3000/layout');
+        // getLayout();
+        setlayoutData(getLayout());
       } catch (error) {
-        setlayoutData({});
+        setlayoutData([]);
       }
     };
     getLayoutData();

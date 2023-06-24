@@ -1,38 +1,4 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "layout": [
-        {
-            "id": 1,
-            "name": "Home",
-            "path": "/",
-            "emoji": "☕"
-        },
-        {
-            "id": 2,
-            "name": "Projects",
-            "path": "/projects",
-            "emoji": "📚"
-        },
-        {
-            "id": 3,
-            "name": "Contact",
-            "path": "/contact",
-            "emoji": "☎"
-        }
-    ],
     "profile": {
         "name": "Hi 👋This is Ankit 🚀",
         "title": "I am a Front End Developer 🔥",

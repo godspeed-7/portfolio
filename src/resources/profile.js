@@ -1,0 +1,51 @@
+const profile = {
+    "name": "Hi 👋This is Ankit 🚀",
+    "title": "I am a Front End Developer 🔥",
+    "description": " Over 4 years of experience in software development. I specialize in React, Typescript, Javascript, NodeJS, React Native. Solid communication and interpersonal skills",
+    "links": {
+        "github": "https://github.com/godspeed-7",
+        "linkedin": "https://www.linkedin.com/in/ankit-singh-14576696/",
+        "resume": "https://drive.google.com/file/d/1aRI9FLqwMfZlxDhErutmiLWc-ue5ryId/view?usp=sharing"
+    },
+    "technologies": [
+        {
+            "id": 1,
+            "name": "HTML",
+            "rating": 8
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "rating": 7
+        },
+        {
+            "id": 3,
+            "name": "Javascript",
+            "rating": 9
+        },
+        {
+            "id": 4,
+            "name": "Typescript",
+            "rating": 6
+        },
+        {
+            "id": 5,
+            "name": "React",
+            "rating": 8
+        },
+        {
+            "id": 6,
+            "name": "React Native",
+            "rating": 6
+        },
+        {
+            "id": 7,
+            "name": "Node.js",
+            "rating": 6
+        }
+    ]
+}
+
+export const getProfile = () => {
+    return profile;
+}
